@@ -9,6 +9,18 @@ class Question extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Text(questionText);
+    //styling our text
+    return Container(
+      width: double.infinity,
+      //container can take as much size as the width it can gets
+      margin: EdgeInsets.all(10),
+      child: Text(
+        questionText,
+        style: TextStyle(fontSize: 28),
+        textAlign: TextAlign.center,
+      ),
+    );
+    // textAlign is a enum which is a list of predefined values. The idea here simply is that there are different kind of values you can assign for alignment
+    //like center, left, right and so on
   }
 }
